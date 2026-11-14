@@ -238,7 +238,7 @@ footer .links{display:flex;gap:22px;font:700 13.5px "Inter Tight";color:#dbe5ee}
 .nlbar{background:var(--navy);color:var(--cream);border-bottom:1px solid rgba(245,223,183,.18)}
 .nlbar .wrap{display:flex;align-items:center;justify-content:center;gap:18px;min-height:52px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
 .nlbar p{font:600 14px Inter;color:#dfe6ec;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
-.nlbar p b{font:800 12.5px "Inter Tight";letter-spacing:.14em;text-transform:uppercase;color:var(--cream)}
+.nlbar p b{font:800 17px "Inter Tight";letter-spacing:.14em;text-transform:uppercase;color:var(--cream)}
 .nlf{display:flex;gap:8px;min-width:0}
 .nlf input{min-width:0;flex:1;font:500 14px Inter;padding:9px 12px;border-radius:5px;border:1.5px solid rgba(245,223,183,.45);background:#FAF9F9;color:var(--ink)}
 .nlf .btn{padding:9px 16px;font-size:12.5px;border-radius:5px;background:var(--cream);color:var(--navy);box-shadow:none}
@@ -280,7 +280,7 @@ footer .links{display:flex;gap:22px;font:700 13.5px "Inter Tight";color:#dbe5ee}
 .nlmini{background:#FAF9F9;border-top:3px solid var(--navy)}
 .nlmini .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
 .nlmini p{font:500 14.5px Inter;color:#33414c;max-width:620px}
-.nlmini p b{font:800 12.5px "Inter Tight";letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-right:8px}
+.nlmini p b{font:800 18px "Inter Tight";letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-right:8px}
 .nlmini .nlf{width:380px}.nlmini .nlf input{border-color:#9fb1bf}.nlmini .nlf .btn{background:var(--navy);color:#fff}
 /* Slide-in */
 .nlpop{position:fixed;right:24px;bottom:24px;width:360px;max-width:calc(100% - 24px);background:#FAF9F9;color:var(--ink);border-top:5px solid var(--navy);border-radius:10px;box-shadow:0 24px 60px rgba(0,20,35,.35);padding:22px 22px 18px;z-index:60;transform:translateY(calc(100% + 40px));opacity:0;visibility:hidden;transition:transform .35s ease,opacity .35s,visibility 0s .35s}
@@ -331,7 +331,7 @@ body{padding-bottom:110px}
 
 <!-- 0. BARRA DE NEWSLETTER (Kit, sense regal). A la versió real, action = URL del formulari de Kit. -->
 <div class="nlbar" id="newsletter"><div class="wrap">
- <p><b>Newsletter</b><span>Lo que pasó entre México y EE. UU., con sus fuentes.</span></p>
+ <p><b>Newsletter</b><span>Lo que pasa en el mundo, explicado desde México: comercio, EE. UU. y T-MEC, con sus fuentes.</span></p>
  <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
  <small>Con Kit · baja con un clic · <a href="privacidad.html">Privacidad</a></small>
 </div></div>
@@ -497,7 +497,7 @@ body{padding-bottom:110px}
 
 <!-- 10. NEWSLETTER REDUÏDA abans del peu -->
 <section class="nlmini"><div class="wrap">
- <p><b>Newsletter</b> Un resumen en texto con los gráficos de la semana y aviso cuando actualizamos un libro.</p>
+ <p><b>Newsletter</b> Lo que pasa en el mundo, explicado desde México. Un resumen semanal con gráficos y fuentes, y aviso cuando actualizamos un libro.</p>
  <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
 </div></section>
 
@@ -508,9 +508,9 @@ body{padding-bottom:110px}
 </div></footer>
 <aside class="nlpop" id="nlpop" role="dialog" aria-label="Newsletter" aria-hidden="true">
  <button class="x" type="button" aria-label="Cerrar">✕</button>
- <div class="eyebrow">Newsletter</div>
- <h4>Cada semana, lo que pasó entre México y EE. UU., con sus fuentes</h4>
- <p>Un resumen en texto con los gráficos de la semana. Si actualizamos uno de los libros, se lo avisamos en el mismo correo.</p>
+ <div class="eyebrow" style="font-size:16px;letter-spacing:.14em">Newsletter</div>
+ <h4>Lo que pasa en el mundo, explicado desde México</h4>
+ <p>Cada semana: EE. UU., comercio y T-MEC, con gráficos y fuentes. Si actualizamos uno de los libros, se lo avisamos en el mismo correo.</p>
  <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
  <div class="fine">Enviamos la newsletter con Kit. Solo usamos su correo para enviársela y puede darse de baja con un clic. <a href="privacidad.html">Aviso de privacidad</a></div>
 </aside>
