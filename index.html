@@ -323,7 +323,7 @@ body{padding-bottom:110px}
 .price-tag{display:inline-block;margin-left:8px;background:#00233D;color:#F5DFB7;font:800 10px/1 "Inter Tight",sans-serif;letter-spacing:.08em;padding:3px 7px;border-radius:3px;vertical-align:middle;text-transform:uppercase}
 .paynote small{display:block;font:500 12px/1.5 Inter,sans-serif;color:#5a6570;margin-top:6px}
 
-</style><style>/* Newsletter amagada fins tenir Kit (14/11/2026) */.nlbar,.nlmini,#nlpop{display:none!important}</style>
+</style>
 </head>
 <body>
 <!-- Nota interna 14/11/2026: enllaços Payhip ja posats (globalbriefs / VC2c3 / SjDXf / tTMkj). Pendents: [URL LANDING KIT] de Kit, i publicació de la pàgina. Preus US$12 / 14 / 21 aprovats el 12/11/2026. Responsable editorial: Análisis Global. Venedor legal: Gil Grifol Morer. Correu: contactoventas017@gmail.com. -->
@@ -332,7 +332,7 @@ body{padding-bottom:110px}
 <!-- 0. BARRA DE NEWSLETTER (Kit, sense regal). A la versió real, action = URL del formulari de Kit. -->
 <div class="nlbar" id="newsletter"><div class="wrap">
  <p><b>Newsletter</b><span>Lo que pasó entre México y EE. UU., con sus fuentes.</span></p>
- <form class="nlf " action="[URL LANDING KIT]" method="get" onsubmit="return agSub(this)"><input type="email" name="email" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
+ <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
  <small>Con Kit · baja con un clic · <a href="privacidad.html">Privacidad</a></small>
 </div></div>
 
@@ -498,7 +498,7 @@ body{padding-bottom:110px}
 <!-- 10. NEWSLETTER REDUÏDA abans del peu -->
 <section class="nlmini"><div class="wrap">
  <p><b>Newsletter</b> Un resumen en texto con los gráficos de la semana y aviso cuando actualizamos un libro.</p>
- <form class="nlf " action="[URL LANDING KIT]" method="get" onsubmit="return agSub(this)"><input type="email" name="email" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
+ <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
 </div></section>
 
 <!-- 11. PEU -->
@@ -511,7 +511,7 @@ body{padding-bottom:110px}
  <div class="eyebrow">Newsletter</div>
  <h4>Cada semana, lo que pasó entre México y EE. UU., con sus fuentes</h4>
  <p>Un resumen en texto con los gráficos de la semana. Si actualizamos uno de los libros, se lo avisamos en el mismo correo.</p>
- <form class="nlf " action="[URL LANDING KIT]" method="get" onsubmit="return agSub(this)"><input type="email" name="email" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
+ <form class="nlf " action="https://app.kit.com/forms/10190072/subscriptions" method="post" target="_blank" onsubmit="return agSub(this)"><input type="email" name="email_address" required placeholder="Su correo electrónico" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></form>
  <div class="fine">Enviamos la newsletter con Kit. Solo usamos su correo para enviársela y puede darse de baja con un clic. <a href="privacidad.html">Aviso de privacidad</a></div>
 </aside>
 
@@ -529,8 +529,8 @@ lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on
 document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(k-1);if(e.key==='ArrowRight')show(k+1);});})();
 </script>
 <script>
-/* Newsletter: maqueta, no envia res. A la versió real el formulari va a Kit (doble opt-in). */
-function agSub(f){try{localStorage.setItem('ag_nl_pop','sub')}catch(e){}f.innerHTML='<p class="ok">Gracias. Le enviamos un correo para confirmar su suscripción.</p>';return false;}
+/* Newsletter: envia a Kit form 10190072 (doble opt-in). */
+function agSub(f){try{localStorage.setItem('ag_nl_pop','sub')}catch(x){}setTimeout(function(){f.innerHTML='<p class="ok">Gracias. Revise su correo para confirmar la suscripción.</p>';},300);return true;}
 /* Slide-in: al 50 % del scroll o exit-intent (escriptori). Com a màxim un cop cada 24 h (localStorage) i mai després de subscriure's. */
 (function(){var K='ag_nl_pop',pop=document.getElementById('nlpop'),done=false;
 function seen(){try{var v=localStorage.getItem(K);return v==='sub'||(v&&Date.now()-(+v)<864e5);}catch(e){return false}}
